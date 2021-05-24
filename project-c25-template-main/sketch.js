@@ -37,14 +37,12 @@ function draw() {
   groundObject.display();
   dustbinObj.display();
   Paper.display();
-  keyPressed();
+
   drawSprites();
 
 }
 function keyPressed(){
-if (keyCode ===Up_ARROW){
-
-	Matter.Body.applyForce(Paper.body,Paper.body.position,{x:15,y:-15})
+if (keyCode ===UP_ARROW){Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:130,y:-145});
 }
 
 
